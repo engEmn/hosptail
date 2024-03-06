@@ -11,6 +11,10 @@ body {
   color: slateblue;
 } */
 
+html {
+  scroll-behavior: smooth;
+}
+
 ul {
   list-style: none;
 }
@@ -166,7 +170,7 @@ header ul li a {
   width: 0;
   height: 0;
   transition: 0.5s;
-  background-color: #afa6a6;
+  background-color: #d3d3d39e;
   z-index: -1;
 }
 .welcome .content .card:hover::before {
@@ -198,9 +202,9 @@ header ul li a {
   width: 90%;
   margin-inline: auto;
   flex-wrap: wrap;
+  gap: 100px;
 }
 .parent .card {
-  width: calc(100% / 3);
   text-align: center;
   position: relative;
 }
@@ -208,15 +212,15 @@ header ul li a {
 .parent .card .text {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.486);
+  width: 235px;
+  height: 235px;
+  background-color: #d3d3d39e;
   display: none;
 }
 .card:hover .text {
@@ -234,3 +238,245 @@ header ul li a {
 .card .text .icon {
   margin-block: 20px;
 }
+/*start staf*/
+.staf h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.staf .father {
+  display: flex;
+  flex-wrap: wrap;
+}
+.staf .father {
+  justify-content: center;
+}
+.staf .father .card2 {
+  border: 2px solid rgba(161, 156, 156, 0.682);
+  width: 280px;
+  height: 200px;
+  margin: 20px 50px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+}
+.staf .father .card2 i {
+  font-size: 30px;
+  color: blue;
+  padding-inline: 10px;
+}
+.staf .father .card2 .string {
+  text-align: left;
+  margin-left: 15px;
+}
+.staf .father .card2 .string h3 {
+  margin-bottom: 10px;
+}
+.staf .father .card2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  background-color: #d3d3d39e;
+  z-index: -1;
+  transition: 0.5s;
+}
+.staf .father .card2:hover::before {
+  width: 100%;
+  height: 100%;
+}
+/*start the final*/
+.final {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 150px;
+  margin-inline: 30px;
+}
+.final .information h1 {
+  margin-bottom: 20px;
+}
+.final .information .bar {
+  line-height: 30px;
+  color: #6f6c6cf1;
+  margin-bottom: 30px;
+}
+body > div.final > div.imge > img {
+  width: 500px;
+  height: 400px;
+  max-width: 100%;
+}
+.final .information .list .first {
+  display: flex;
+  line-height: 40px;
+  align-items: center;
+}
+.final .information .list .first i {
+  color: blue;
+  margin-right: 5px;
+}
+.final .information .list .first p {
+  color: #6f6c6cf1;
+}
+@media (max-width: 1110px) {
+  .final {
+    flex-direction: column;
+  }
+  .final .information .imge {
+    overflow: auto;
+  }
+}
+
+/*end the final*/
+/* start final2 */
+.final2 {
+  display: flex;
+  justify-content:space-around;
+  margin: 100px 0;
+  height: 270px;
+  /* background-color: aquamarine; */
+  background: url(../imgs/smiling-doctor-portrait-20304370.webp);
+  background-size:cover ;
+  background-position: scroll;
+  align-items: center;
+  background-attachment: fixed;
+}
+.final2 .card3{
+  color:black;
+}
+  
+.final2 .card3 i{
+  color: blue;
+  font-size: 30px;
+  margin-block: 5px;
+  margin-inline: 5px;
+}
+.final2 .card3 p{
+  color:black;
+}
+/* end final2 */
+/* start addition */
+.addition .title{
+  text-align: center;
+  margin-block: 80px;
+}
+.addition .grand{
+  display: flex;
+  justify-content: space-around;
+  margin-inline: auto;
+  /* position: relative; */
+  
+}
+@media(max-width:900px){
+  .addition .grand{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .addition .grand .card4{
+    margin-top: 30px;
+  }
+
+}
+.addition .grand .card4{
+  border: 2px solid rgb(175, 173, 173);
+  width: 300px;
+  height: 280px;
+  text-align: center;
+  /* padding-block: 10px; */
+  padding-top:120px;
+  position: relative;
+}
+.addition .grand .card4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 0;
+  background-color: #d3d3d39e;
+  z-index: -1;
+  transition: 1s;
+
+}
+.addition .grand .card4:hover::before {
+  height: 100%;
+  width: 100%;
+}
+
+.addition .grand .card4 h3{
+  color: #c8bfbf;
+  padding-bottom: 10px;
+
+}
+.addition .grand .card4 .circle{
+  border: 2px solid rgb(36, 24, 163);
+  width: 60px;
+  height: 60px;
+  margin-inline: auto;
+  margin-bottom: 15px;
+  border-radius: 50%;
+}
+.addition .grand .card4 .par{
+  color: #c7c0c0;
+  margin-bottom: 20px;
+}
+.addition .grand .card4 .button{
+  border: 3px solid blue;
+  display: inline;
+  padding-inline: 20px;
+  
+}
+
+
+/* end addition */
+/* start final3 */
+.final3{
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid black;
+  height: 400px;
+  align-items: center;
+  background-image: linear-gradient(rgb(224, 220, 220),#190c9499);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.final3 .card5{
+  display: flex;
+  flex-direction: column;
+  
+}
+.final3 .card5 .cont{
+  padding-left: 9px;
+  padding-top: 15px;
+}
+.final3 .card5 .img{
+  border: 1px solid rgb(147, 144, 144);
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-image: url(../imgs/smiling-doctor-portrait-20304370.jpg);
+  background-size: cover;
+}
+.final3 .card5 p{
+  padding-top: 5px;
+}
+.final3 .cont h3{
+  padding-top: 5px;
+}
+@media(max-width:700px){
+  .final3{
+    display: flex;
+    flex-wrap: wrap;
+    height: 800px;
+    flex-direction: column;
+  }
+}
+
+
+
